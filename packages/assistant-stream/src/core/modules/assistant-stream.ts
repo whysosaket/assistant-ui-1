@@ -54,6 +54,11 @@ class AssistantStreamControllerImpl implements AssistantStreamController {
     this._closeSubscriber = callback;
   }
 
+  private _closeSubscriber: undefined | (() => void);
+  __internal_subscribeToClose(callback: () => void) {
+    this._closeSubscriber = callback;
+  }
+
   private _addPart(part: PartInit, stream: AssistantStream) {
     this.enqueue({
       type: "part-start",
