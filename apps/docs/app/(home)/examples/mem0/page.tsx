@@ -8,7 +8,7 @@ export default function Component() {
 
         <div className="h-[700px]">
           <iframe
-            title="Mem0 example"
+            title="Mem0 - ChatGPT with memory demo"
             className="h-full w-full border border-gray-200"
             src="https://demo.mem0.ai/"
           />
